@@ -1,0 +1,16 @@
+﻿table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: none;
+}
+
+.header-cell {
+    width: 780px;
+    height: 131px;
+    vertical-align: top;
+    text-align: left;
+}
+
