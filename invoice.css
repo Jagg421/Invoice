@@ -1,4 +1,22 @@
-﻿table {
+﻿@page {
+    size: A4 portrait;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.print-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -7,9 +25,21 @@ table, th, td {
     border: none;
 }
 
-.header-cell {
-    width: 780px;
-    height: 131px;
+.custom-cell {
+    width: 100%; /* Let the custom cell occupy full width */
     vertical-align: top;
     text-align: left;
+}
+
+.header-cell {
+    max-width: 100%; /* Ensure the image fits within the parent container */
+    max-height: 100%; /* Ensure the image fits within the parent container  */
+    vertical-align: top;
+    text-align: center;
+}
+
+.header-cell img {
+    max-width: 100%; /* Ensure the image fits within the parent container */
+    max-height: 100%; /* Ensure the image fits within the parent container */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
 }

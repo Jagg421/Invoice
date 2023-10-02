@@ -2,28 +2,29 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>test 2</title>
-  
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Invisible Table Layout</title>
 </head>
 
 <body>
-  <table>
-        <tr>
-            <td class="header-cell"><img src="images/Logo.png"> </td>
-        </tr>
-  </table>
-  
-    <table>
-        <tr>
-            <td >Content for Row 2, Column 1</td>
-            <td>Content for Row 2, Column 2</td>
-        </tr>
-        
-    </table>
-    
+    <div class="print-content">
+        <table>
+            <tr>
+                <td class="header-cell">
+                    <img src="images/Logo.png" alt="Logo">
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-cell">Content for Custom Cell</td>
+                <td>Content for Row 1, Column 2</td>
+            </tr>
+            <tr>
+                <td>Content for Row 2, Column 1</td>
+                <td>Content for Row 2, Column 2</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
